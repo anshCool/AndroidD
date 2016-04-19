@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/m_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Large Text"
+        android:textColor="#F0F8FF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/m_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_release"
+        android:layout_below="@+id/m_release"
+        android:layout_marginTop="14dp"
+        android:textColor="#FFFF00"
+        android:text="TextView"
+         android:textStyle="bold" 
+         android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/m_actors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_director"
+        android:layout_below="@+id/m_director"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFF00"
+        android:text="TextView"
+         android:textStyle="bold" 
+         android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/m_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_actors"
+        android:layout_below="@+id/m_actors"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFF00"
+        android:text="Medium Text"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/m_genere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_rating"
+        android:layout_below="@+id/m_rating"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="#FFFF00"
+        android:text="TextView" 
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/m_plot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_genere"
+        android:layout_below="@+id/m_genere"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="24dp"
+        android:textColor="#FFFF00"
+        android:text="A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO." 
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+    
+    <TextView
+        android:id="@+id/m_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_plot"
+         android:layout_below="@+id/m_plot"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="18dp"
+        android:text="TextView" 
+        android:textColor="#FFFF00"
+         android:textStyle="bold"
+         android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/m_votes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/m_rating"
+        android:layout_alignBottom="@+id/m_rating"
+        android:layout_alignRight="@+id/m_poster"
+        android:text="Medium Text"
+        android:layout_marginBottom="24dp"
+        android:textColor="#FFFF00"
+         android:textStyle="bold"
+         android:textSize="15dp"
+         />
+
+    <TextView
+        android:id="@+id/m_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_writer"
+        android:layout_below="@+id/m_writer"
+        android:layout_marginBottom="18dp"
+        android:text="TextView" 
+        android:textColor="#FFFF00"
+         android:textStyle="bold"
+         android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/m_awards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m_time"
+        android:text="Medium Text"
+        android:layout_marginBottom="18dp"
+        android:textColor="#FFFF00"
+         android:textStyle="bold"
+         android:textSize="15dp"
+       />
+
+    <TextView
+        android:id="@+id/m_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_awards"
+        android:layout_below="@+id/m_awards"
+        android:layout_marginBottom="24dp"
+        android:text="TextView" 
+        android:textColor="#FFFF00"
+         android:textStyle="bold"
+         android:textSize="15dp"/>
+
+    <ImageView
+        android:id="@+id/m_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/m_plot"
+        android:layout_below="@+id/m_title"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/m_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/m_title"
+        android:layout_below="@+id/m_poster"
+        android:text="TextView" 
+        android:textColor="#FFFF00"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/m_awards"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/m_title"
+        android:onClick="addtoList"
+        android:text="Add to watch list" 
+        android:background="#95B9C7"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>
+
+</ScrollView>
